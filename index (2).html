@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08080b">
+  <meta name="description" content="Contato digital de Eduardo, founder of Noctyra. WhatsApp, Pix e salvar contato.">
+  <title>Eduardo | Contato Digital</title>
+  <style>
+    :root { color-scheme: dark; --bg:#08080b; --panel:#111116; --line:#292832; --muted:#aaa8b6; --white:#f7f6fb; --violet:#9b72ff; --violet2:#6d3ee8; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100svh; display:grid; place-items:center; padding:28px 16px; color:var(--white); background:radial-gradient(ellipse at 50% 0%, #25163d 0%, #101017 36%, var(--bg) 72%); font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .card { width:min(100%, 430px); border:1px solid #34303f; border-radius:28px; padding:32px 24px 24px; background:linear-gradient(160deg,rgba(24,22,31,.97),rgba(12,12,16,.98)); box-shadow:0 24px 90px #0009, 0 0 40px #7d4be91a; text-align:center; }
+    .logo { width:76px;height:76px;margin:0 auto 18px;border-radius:23px;display:grid;place-items:center;border:1px solid #7652c7;background:linear-gradient(145deg,#2b1b48,#101016);box-shadow:inset 0 0 22px #9b72ff22,0 0 28px #8a5cf51b;color:#c8b5ff;font-size:25px;font-weight:800;letter-spacing:-2px; }
+    .eyebrow { color:#b8a0ff; text-transform:uppercase; letter-spacing:.2em; font-size:10px; font-weight:750; margin:0 0 10px; }
+    h1 { margin:0; font-size:clamp(25px,7vw,32px); line-height:1.12; letter-spacing:-.04em; }
+    .subtitle { color:var(--muted); font-size:14px; margin:10px 0 24px; }
+    .rule { height:1px; background:linear-gradient(90deg,transparent,#514365,transparent); margin:0 0 22px; }
+    .buttons { display:grid; gap:11px; }
+    .btn { width:100%; min-height:54px; border-radius:15px; display:flex; align-items:center; justify-content:center; gap:10px; padding:14px 16px; text-decoration:none; font:650 14px/1.2 inherit; font-size:14px; font-weight:650; border:1px solid var(--line); color:var(--white); background:#17171e; cursor:pointer; transition:transform .16s ease,border-color .16s ease,background .16s ease; }
+    .btn:hover { transform:translateY(-1px); border-color:#8061bd; background:#211a2d; }
+    .btn.primary { color:white; border-color:#9269ff; background:linear-gradient(100deg,#7545dc,#5530b7); box-shadow:0 8px 25px #6d3ee833; }
+    .btn.primary:hover { background:linear-gradient(100deg,#8558eb,#6240c8); }
+    .btn svg { width:19px;height:19px; flex:none; }
+    .pix { margin-top:20px; padding:16px; border:1px solid #302c3a; background:#0d0d12; border-radius:16px; text-align:left; }
+    .pix-head { display:flex; align-items:center; gap:9px; font-size:13px; font-weight:700; margin-bottom:8px; }
+    .pix-key { color:#c3bfce; font-size:12px; overflow-wrap:anywhere; margin-bottom:12px; }
+    .pix .btn { min-height:43px; font-size:12px; padding:10px; }
+    .note { min-height:18px; color:#c5b2ff; font-size:12px; margin:10px 0 0; text-align:center; }
+    footer { color:#777482; font-size:11px; margin-top:23px; }
+    footer strong { color:#b7a0f6; font-weight:650; }
+    .sr-only { position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0; }
+    @media (max-width:360px) { .card { padding:26px 17px 20px; } .btn { min-height:50px; } }
+    @media (prefers-reduced-motion:reduce) { * { transition:none!important; } }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="logo" aria-hidden="true">N.</div>
+    <p class="eyebrow">Contato digital</p>
+    <h1>Eduardo</h1>
+    <p class="subtitle">Founder of Noctyra</p>
+    <div class="rule"></div>
+
+    <section class="buttons" aria-label="Opções de contato">
+      <a class="btn primary" id="whatsapp" href="https://wa.me/5511967953515?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20as%20informa%C3%A7%C3%B5es%20e%20do%20seu%20trabalho%20e%20da%20noctyra." target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 11.7a8 8 0 0 1-11.8 7L4 20l1.3-4A8 8 0 1 1 20 11.7Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 8.5c.3-.5.6-.5.9-.1l.8 1.2c.2.3.1.5-.2.8l-.5.5c.6 1.2 1.4 2 2.6 2.6l.5-.6c.2-.2.5-.3.8-.1l1.2.8c.4.2.4.6.1.9-.5.7-1.1 1-1.9.9-2.8-.4-5.6-3.2-6-6-.1-.8.2-1.4.9-1.9Z" fill="currentColor"/></svg>
+        Falar pelo WhatsApp
+      </a>
+      <button class="btn" id="saveContact" type="button">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="9" cy="8" r="3.2" stroke="currentColor" stroke-width="1.7"/><path d="M3.5 19v-1.2A4.8 4.8 0 0 1 8.3 13h1.4a4.8 4.8 0 0 1 4.8 4.8V19M17 8v6m-3-3h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        Salvar contato
+      </button>
+    </section>
+
+    <section class="pix" aria-label="Chave Pix">
+      <div class="pix-head">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="m8.2 3.5 3.8 3.8 3.8-3.8M8.2 20.5 12 16.7l3.8 3.8M3.5 8.2 7.3 12l-3.8 3.8M20.5 8.2 16.7 12l3.8 3.8" stroke="#b89cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Minha chave Pix
+      </div>
+      <div class="pix-key" id="pixKey">eduardochaves551@gmail.com</div>
+      <button class="btn" id="copyPix" type="button">Copiar chave Pix</button>
+      <p class="note" id="status" role="status" aria-live="polite"></p>
+    </section>
+    <footer>Conecte-se com <strong>Eduardo</strong> · <strong>Noctyra</strong></footer>
+  </main>
+  <script>
+    const status = document.getElementById('status');
+    const phone = '+55 11 96795-3515';
+    document.getElementById('copyPix').addEventListener('click', async () => {
+      const key = document.getElementById('pixKey').textContent.trim();
+      try {
+        await navigator.clipboard.writeText(key);
+        status.textContent = 'Chave Pix copiada. Cole no app do seu banco.';
+      } catch {
+        const area = document.createElement('textarea');
+        area.value = key; area.setAttribute('readonly', '');
+        area.style.position = 'absolute'; area.style.left = '-9999px';
+        document.body.appendChild(area); area.select();
+        const ok = document.execCommand('copy'); area.remove();
+        status.textContent = ok ? 'Chave Pix copiada. Cole no app do seu banco.' : 'Copie manualmente a chave Pix acima.';
+      }
+    });
+    document.getElementById('saveContact').addEventListener('click', () => {
+      const vcard = [
+        'BEGIN:VCARD', 'VERSION:3.0', 'N:;Eduardo;;;',
+        'FN:Eduardo - Founder of Noctyra', 'ORG:Noctyra',
+        'TEL;TYPE=CELL,VOICE:+5511967953515',
+        'EMAIL:eduardochaves551@gmail.com',
+        'URL:https://wa.me/5511967953515', 'END:VCARD', ''
+      ].join('\\r\\n');
+      const blob = new Blob([vcard], {type:'text/vcard;charset=utf-8'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a'); a.href = url; a.download = 'Eduardo-Noctyra.vcf';
+      document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+      status.textContent = 'Contato preparado para salvar na agenda.';
+    });
+  </script>
+</body>
+</html>
